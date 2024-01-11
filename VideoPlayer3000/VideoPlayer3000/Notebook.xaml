@@ -1,0 +1,16 @@
+﻿<Window x:Name="Notebook1" x:Class="VideoPlayer3000.Notebook"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VideoPlayer3000"
+        mc:Ignorable="d"
+        Title="Notebook" Height="450" Width="300" Icon="/logoNn.png" ResizeMode="NoResize">
+    <Grid>
+        <Button x:Name="SaveButton" Content="Uložit" HorizontalAlignment="Right" Height="22" Margin="0,0,60,26" VerticalAlignment="Bottom" Width="76" Click="SaveButton_Click" ToolTip="Uložit záznam"/>
+        <Button x:Name="CancelButton" Content="Storno" HorizontalAlignment="Left" Height="22" Margin="60,0,0,26" VerticalAlignment="Bottom" Width="76" Click="StornoButton_Click" ToolTip="Zrušit záznam"/>
+        <Label Content="Zadejte poznámku k danému času" Height="48" Margin="0,22,0,0" VerticalAlignment="Top" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="noteTextBox" Height="284" TextWrapping="Wrap" Width="280"/>
+
+    </Grid>
+</Window>
